@@ -57,6 +57,9 @@ If it is used as a parameter for other types, such as `Vector{Foo}`, it should b
 Using `Vector{Foo}` instead of `Vector{⋆Foo}` should generally not change the correctness
 of the code, although it will impact performance.
 
+If used with other type-modifying macros such as `@kwdef`, use `@redefinable` as the
+outermost macro.
+
 Current limitations:
 
 - It is still impossible to change the declared supertype.

@@ -24,7 +24,7 @@ end
 
 macro redefinable(expr)
     mgs = ModGenSym(Symbol(__module__))
-    newdeclarations, expressions = make_redefinable(expr, mgs)
+    newdeclarations, expressions = make_redefinable(macroexpand(__module__, expr), mgs)
     ret = Expr(:block)
     j = 1
     for e in expressions
