@@ -1,0 +1,4 @@
+name = "RedefinableTypes"
+uuid = "aa9a8303-2a06-4078-8d5f-4f62212030c9"
+authors = ["Lionel Zoubritzky <lionel.zoubritzky@gmail.com>"]
+version = "0.1.0"
